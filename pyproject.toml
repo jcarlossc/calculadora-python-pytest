@@ -13,6 +13,9 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "calculadora", from = "src"}]
 
+[tool.poetry.scripts]
+calc = "calculadora.main:main"
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
