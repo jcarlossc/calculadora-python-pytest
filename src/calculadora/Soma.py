@@ -2,7 +2,7 @@ from calculadora.Operacao import Operacao
 
 class Soma(Operacao):
 
-    def executar(num1: float, num2: float) -> float:
+    def executar(self, num1: float, num2: float) -> float:
 
         try:
             return num1 + num2 
