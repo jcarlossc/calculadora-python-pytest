@@ -64,6 +64,10 @@ cd calculadora-python-pytest
 ```
 poetry install
 ```
+### 2. Executar projeto
+```
+poetry run calc
+```
 
 ---
 
