@@ -62,6 +62,12 @@ calculadora/
 git clone https://github.com/jcarlossc/calculadora-python-pytest.git
 cd calculadora-python-pytest
 ```
+### 📌 Instalar o Poetry
+
+Se você não tiver o Poetry instalado:
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
 ### 2. Instalar dependências com Poetry
 ```
 poetry install
