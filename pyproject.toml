@@ -1,9 +1,9 @@
 [project]
 name = "calculadora"
 version = "0.1.0"
-description = ""
+description = "Estudo sobre testes unitários, de integração e funcional."
 authors = [
-    {name = "jcarlossc",email = "josecscosta@fac.pe.senac.br"}
+    {name = "jcarlossc",email = "jcarlossc1977@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
