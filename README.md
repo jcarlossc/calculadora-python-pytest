@@ -70,9 +70,9 @@ poetry install
 ## 📌 Testes com Pytest
 Tipos de testes implementados:
 
-Unitário → Testa cada operação isoladamente.
-Integração → Testa a interação da Calculadora com diferentes estratégias.
-Funcional → Simula o uso real, com diferentes entradas e operações.
+* Unitário → Testa cada operação isoladamente.
+* Integração → Testa a interação da Calculadora com diferentes estratégias.
+* Funcional → Simula o uso real, com diferentes entradas e operações.
 
 Rodar os testes:
 ```
