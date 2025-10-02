@@ -62,7 +62,7 @@ calculadora/
 git clone https://github.com/jcarlossc/calculadora-python-pytest.git
 cd calculadora-python-pytest
 ```
-### 📌 Instalar o Poetry
+### Instalar o Poetry
 
 Se você não tiver o Poetry instalado:
 ```bash
