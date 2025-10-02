@@ -47,6 +47,7 @@ calculadora/
 │     └── test_funcional.py
 ├── poetry.lock             # Arquivo de dependências
 ├── pyproject.toml          # Configuração do Poetry
+├── LICENSE                 # License
 └── README.md               # Documentação
 ```
 
