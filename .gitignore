@@ -1,0 +1,48 @@
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.pkl
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Virtualenv (se criado localmente)
+.venv/
+venv/
+ENV/
+
+# Poetry
+.cache/
+.pytest_cache/
+
+# Distribuição / Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Cobertura de testes
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# IDEs / Editores
+.vscode/
+.idea/
+*.iml
+
+# Mac/Linux/Windows específicos
+.DS_Store
+Thumbs.db
