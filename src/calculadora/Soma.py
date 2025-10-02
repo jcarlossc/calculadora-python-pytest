@@ -13,8 +13,10 @@ class Soma(Operacao):
 
             Retorna:
                 float: Resultado da operação.
+
+            Raises:
+                ValueError: se os parâmetros não forem numéricos.
         """
-        try:
-            return num1 + num2 
-        except Exception as e:
-            print(f"Erro: {e}")
+        if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+            raise ValueError("Parâmetros inválidos para soma.")
+        return num1 + num2
