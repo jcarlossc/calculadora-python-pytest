@@ -14,7 +14,6 @@ class Divisao(Operacao):
             Retorna:
                 float: Resultado da operação.
         """
-        try:
-            return num1 / num2
-        except ZeroDivisionError as e:
-            print(f"Erro: {e}")
+        if num2 == 0:
+            raise ValueError("Divisão por zero não permitida.")
+        return num1 / num2

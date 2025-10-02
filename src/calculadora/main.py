@@ -2,22 +2,26 @@ from calculadora.Soma import Soma
 from calculadora.Subtracao import Subtracao
 from calculadora.Multiplicacao import Multiplicacao
 from calculadora.Divisao import Divisao
+from calculadora.Calculadora import Calculadora
 
 def main():
-    somar = Soma()
-    print(f"O resultado da soma é: {somar.executar(5, 3)}")
-
-    subtrair = Subtracao()
-    print(f"O resultado da subtração é: {subtrair.executar(5, 3)}")
-
-    multiplicar = Multiplicacao()
-    print(f"O resultado da multiplicação é: {multiplicar.executar(5, 3)}")
-
-    dividir = Divisao()
-    print(f"O resultado da divisão é: {dividir.executar(6, 0)}")
+    somar = Calculadora(Soma())
+    print(f"Resultado da soma: {somar.calcular(5, 3)}")
     
-    dividir = Divisao()
-    print(f"O resultado da divisão é: {dividir.executar(6, 2)}")
+    subtrair = Calculadora(Subtracao())
+    print(f"Resultado da subtração: {subtrair.calcular(5, 3)}")
+    
+    multiplicar = Calculadora(Multiplicacao())
+    print(f"Resultado da multiplicação: {multiplicar.calcular(5, 3)}")
+    
+    dividir = Calculadora(Divisao())
+    print(f"Resultado da divisão: {dividir.calcular(9, 3)}")
+
+    try:
+        dividir = Calculadora(Divisao())
+        print(f"Resultado da divisão: {dividir.calcular(9, 0)}")
+    except ValueError as e:
+        print(f"Erro ao calcular divisão: {e}")
 
 if __name__ == "__main__":
     main()
