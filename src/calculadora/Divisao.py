@@ -13,7 +13,12 @@ class Divisao(Operacao):
 
             Retorna:
                 float: Resultado da operação.
+
+            Raises:
+                ValueError: Divisão por zero não permitida.   
         """
         if num2 == 0:
             raise ValueError("Divisão por zero não permitida.")
+        elif not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+            raise ValueError("Parâmetros inválidos para divisão.")
         return num1 / num2
